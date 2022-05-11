@@ -1,0 +1,68 @@
+{
+    "paths": {
+        "/addStory": {
+            "post": {
+                "tags": [
+                    "Time"
+                ],
+                "description": "Add Story",
+                "parameters": [
+                    {
+                        "name": "title",
+                        "required": true,
+                        "in": "body",
+                        "description": "Add Story",
+                        "schema": {
+                            "$ref": "#/definitions/addStory"
+                        }
+                    }
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Added Story",
+                        "schema": {
+                            "$ref": "#/definitions/addStory"
+                        }
+                    }
+                }
+            }
+        },
+        "/getAllStories": {
+            "get": {
+                "tags": [
+                    "Time"
+                ],
+                "description": "Get All Stories",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Stories found"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "addStory": {
+            "required": [
+                "title",
+                "link"
+            ],
+            "properties": {
+                "title": {
+                    "type": "string",
+                    "example": "Desire"
+                },
+                "link": {
+                    "type": "string",
+                    "example": "www.google.com"
+                }
+            }
+        }
+    }
+}
