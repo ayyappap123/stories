@@ -1,0 +1,150 @@
+::1 GET /index.html 304 - Wed, 11 May 2022 13:43:23 GMT
+[36m[-] Request: [33mGET [37m/index.html
+[36m[-] Response: [36m304 [37m7.549 ms 
+::1 GET /api/getAllStories 304 - Wed, 11 May 2022 13:43:23 GMT
+[36m[-] Request: [33mGET [37m/api/getAllStories
+[35m[undefined] Response Body:[0m
+[37m{[0m
+[37m	"status": 1,[0m
+[37m	"message": "Story Details found.",[0m
+[37m	"data": [[0m
+[37m		{[0m
+[37m			"_id": "627bb2e992b46249070674e7",[0m
+[37m			"title": "Desire",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T12:58:17.203Z",[0m
+[37m			"updatedAt": "2022-05-11T12:58:17.203Z",[0m
+[37m			"__v": 0[0m
+[37m		},[0m
+[37m		{[0m
+[37m			"_id": "627bb2c99b285a48d6bdfe6c",[0m
+[37m			"title": "Desire",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T12:57:45.856Z",[0m
+[37m			"updatedAt": "2022-05-11T12:57:45.856Z",[0m
+[37m			"__v": 0[0m
+[37m		},[0m
+[37m		{[0m
+[37m			"_id": "627b8b2e83b99b3335077bf0",[0m
+[37m			"title": "Desire6",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T10:08:46.889Z",[0m
+[37m			"updatedAt": "2022-05-11T10:08:46.889Z",[0m
+[37m			"__v": 0[0m
+[37m		},[0m
+[37m		{[0m
+[37m			"_id": "627b8b2083b99b3335077bef",[0m
+[37m			"title": "Desire5",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T10:08:32.565Z",[0m
+[37m			"updatedAt": "2022-05-11T10:08:32.565Z",[0m
+[37m			"__v": 0[0m
+[37m		},[0m
+[37m		{[0m
+[37m			"_id": "627b8b1483b99b3335077bee",[0m
+[37m			"title": "Desire4",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T10:08:20.244Z",[0m
+[37m			"u[0m
+[37m...[0m
+[36m[-] Response: [36m304 [37m32.323 ms 
+::1 GET /index.html 200 - Wed, 11 May 2022 13:45:56 GMT
+[36m[-] Request: [33mGET [37m/index.html
+[36m[-] Response: [32m200 [37m4.036 ms 
+::1 GET /api/getAllStories 304 - Wed, 11 May 2022 13:45:56 GMT
+[36m[-] Request: [33mGET [37m/api/getAllStories
+[35m[undefined] Response Body:[0m
+[37m{[0m
+[37m	"status": 1,[0m
+[37m	"message": "Story Details found.",[0m
+[37m	"data": [[0m
+[37m		{[0m
+[37m			"_id": "627bb2e992b46249070674e7",[0m
+[37m			"title": "Desire",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T12:58:17.203Z",[0m
+[37m			"updatedAt": "2022-05-11T12:58:17.203Z",[0m
+[37m			"__v": 0[0m
+[37m		},[0m
+[37m		{[0m
+[37m			"_id": "627bb2c99b285a48d6bdfe6c",[0m
+[37m			"title": "Desire",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T12:57:45.856Z",[0m
+[37m			"updatedAt": "2022-05-11T12:57:45.856Z",[0m
+[37m			"__v": 0[0m
+[37m		},[0m
+[37m		{[0m
+[37m			"_id": "627b8b2e83b99b3335077bf0",[0m
+[37m			"title": "Desire6",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T10:08:46.889Z",[0m
+[37m			"updatedAt": "2022-05-11T10:08:46.889Z",[0m
+[37m			"__v": 0[0m
+[37m		},[0m
+[37m		{[0m
+[37m			"_id": "627b8b2083b99b3335077bef",[0m
+[37m			"title": "Desire5",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T10:08:32.565Z",[0m
+[37m			"updatedAt": "2022-05-11T10:08:32.565Z",[0m
+[37m			"__v": 0[0m
+[37m		},[0m
+[37m		{[0m
+[37m			"_id": "627b8b1483b99b3335077bee",[0m
+[37m			"title": "Desire4",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T10:08:20.244Z",[0m
+[37m			"u[0m
+[37m...[0m
+[36m[-] Response: [36m304 [37m8.842 ms 
+::1 GET /index.html 200 - Wed, 11 May 2022 13:46:28 GMT
+[36m[-] Request: [33mGET [37m/index.html
+[36m[-] Response: [32m200 [37m0.857 ms 
+::1 GET /api/getAllStories 304 - Wed, 11 May 2022 13:46:28 GMT
+[36m[-] Request: [33mGET [37m/api/getAllStories
+[35m[undefined] Response Body:[0m
+[37m{[0m
+[37m	"status": 1,[0m
+[37m	"message": "Story Details found.",[0m
+[37m	"data": [[0m
+[37m		{[0m
+[37m			"_id": "627bb2e992b46249070674e7",[0m
+[37m			"title": "Desire",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T12:58:17.203Z",[0m
+[37m			"updatedAt": "2022-05-11T12:58:17.203Z",[0m
+[37m			"__v": 0[0m
+[37m		},[0m
+[37m		{[0m
+[37m			"_id": "627bb2c99b285a48d6bdfe6c",[0m
+[37m			"title": "Desire",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T12:57:45.856Z",[0m
+[37m			"updatedAt": "2022-05-11T12:57:45.856Z",[0m
+[37m			"__v": 0[0m
+[37m		},[0m
+[37m		{[0m
+[37m			"_id": "627b8b2e83b99b3335077bf0",[0m
+[37m			"title": "Desire6",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T10:08:46.889Z",[0m
+[37m			"updatedAt": "2022-05-11T10:08:46.889Z",[0m
+[37m			"__v": 0[0m
+[37m		},[0m
+[37m		{[0m
+[37m			"_id": "627b8b2083b99b3335077bef",[0m
+[37m			"title": "Desire5",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T10:08:32.565Z",[0m
+[37m			"updatedAt": "2022-05-11T10:08:32.565Z",[0m
+[37m			"__v": 0[0m
+[37m		},[0m
+[37m		{[0m
+[37m			"_id": "627b8b1483b99b3335077bee",[0m
+[37m			"title": "Desire4",[0m
+[37m			"link": "www.google.com",[0m
+[37m			"createdAt": "2022-05-11T10:08:20.244Z",[0m
+[37m			"u[0m
+[37m...[0m
+[36m[-] Response: [36m304 [37m8.372 ms 
