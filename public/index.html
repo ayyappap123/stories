@@ -1,21 +1,92 @@
+<!DOCTYPE html>
 <html>
 
 <body>
-    <div id="button">Get this List</div>
-    <div id="response"></div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#button').click(function () {
-                // run an AJAX get request to the route you setup above...
-                // respect the cross-domain policy by using the same domain
-                // you used to access your index.html file!
-                $.get('http://localhost:8080/getList', function (list) {
-                    $('#response').html(list.message); // show the list
-                });
-            });
-        });
+
+    <h1 style="color:red;">TIME</h1>
+    <div class="news-block-container">
+        <div id="news-block" class="news-block">
+
+        </div>
+    </div>
+
+    <script>
+        function run() {
+            var xhr = new XMLHttpRequest();
+            let newsBlockContainer = document.querySelector('.news-block-container');
+            newsBlockContainer.style.display = "none";
+
+            var url = 'http://localhost:5005/api/getAllStories';
+            xhr.open("GET", url, true);
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    let response = JSON.parse(this.responseText);
+                    if (response.data) {
+                        let newsBlockParent = document.querySelector('#news-block');
+                        response.data.forEach(element => {
+                            newsBlockParent.appendChild(createMenuItem(element));
+                        });
+                        newsBlockContainer.style.display = "block";
+                    }
+                }
+            }
+            xhr.send();
+        }
+        function createMenuItem(storyObj) {
+            let a = document.createElement('a');
+            a.href = storyObj.link;
+            a.target = "_blank";
+            a.className = 'story';
+
+            let title = document.createElement('div');
+            title.className = 'storyTitle';
+            title.innerHTML = storyObj.title;
+            a.appendChild(title);
+
+            let storyDate = new Date(storyObj.createdAt).toUTCString();
+            let story_date = document.createElement('span');
+            story_date.className = 'storyDate';
+            story_date.innerHTML = storyDate;
+            a.appendChild(story_date);
+            return a;
+        }
+        run();
     </script>
+
+    <style>
+        .news-block-container {
+            width: 20%;
+            margin-left: auto;
+            float: right;
+            background-color: yellow;
+            padding: 20px;
+            border-radius: 5px;
+            max-height: 345Px;
+            overflow: auto;
+        }
+
+        .news-block {}
+
+        .news-block a {
+            display: block;
+            min-height: 60px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .news-block .story .storyTitle {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .news-block .story .storyDate {
+            font-size: 12px;
+            font-weight: bold;
+            color: #888;
+        }
+    </style>
+
 </body>
 
 </html>
